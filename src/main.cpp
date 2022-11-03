@@ -40,7 +40,7 @@ static void drawMenu(int idx, int mode)
 
   default:
     display.setTextColor(TFT_YELLOW);
-    display.setColor(TFT_DARKGRAY);
+    display.setColor(TFT_BLACK);
     break;
   }
 
@@ -198,13 +198,11 @@ void loop(void)
     }
     break;
   }
-  m5gfx::touch_point_t tp[5];
+  m5gfx::touch_point_t tp[2];
 
-//    int nums = M5.Display.getTouch(tp, 2);
-  int nums = M5.Display.getTouch(tp, 5);
+  int nums = M5.Display.getTouch(tp, 2);
   for (int i = 0; i < nums; ++i)
   {
-    M5.Display.setColor(M5.Display.isEPD() ? TFT_BLACK : TFT_CYAN);
-    M5.Display.fillCircle(tp[i].x, tp[i].y, tp[i].size);
+    M5.Display.fillCircle(tp[i].x, tp[i].y, tp[i].size + 2, rand());
   }
 }

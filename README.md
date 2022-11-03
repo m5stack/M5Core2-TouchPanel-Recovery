@@ -1,5 +1,7 @@
 # M5Core2 TouchPanel Recovery
 
+![image](./doc/top_image.jpg)
+
 ## Description
 
 This tool recovery the internal firmware of the touchscreen on the M5Core2.
@@ -7,7 +9,7 @@ This tool recovery the internal firmware of the touchscreen on the M5Core2.
  - It can revive touchscreens that have stopped functioning due to malfunctioning M5Tools or FactoryTest updaters.
  - Firmware specifications vary depending on the production period.
  - Writing firmware with different specifications will cause the touchscreen to stop functioning, but writing the correct firmware again will make it work again.
-
+ - It can be written using M5Burner V3. Share code : `RIOdQichbB28kFCg`
 
 ## How to use
 
